@@ -1,3 +1,8 @@
+/**
+	Author: vipxxq
+	Figure 4.8 A linked list implementation.
+*/
+
 #ifndef LLIST_H
 #define LLIST_H
 
@@ -6,7 +11,6 @@
 #include <cassert>
 #include <iostream>
 
-// extern const int defaultSize;
 
 template <typename E>
 class LList: public List<E> {

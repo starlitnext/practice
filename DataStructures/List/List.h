@@ -1,3 +1,8 @@
+/**
+	Author: vipxxq
+	Figure 4.1 The ADT for a list.
+*/
+
 #ifndef LIST_H
 #define LIST_H
 

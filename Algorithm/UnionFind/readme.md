@@ -1,15 +1,15 @@
-###Dynamic connectivity
+### Dynamic connectivity
 - Union command: connect two objects
 - Find/connected query: is there a path connecting the two objects
 
-###Modeling the objects
+### Modeling the objects
 When programming, convenient to name objects 0 to N-1.
 - Use integers as array index.
 
-###Modeling the connections
+### Modeling the connections
 - Connected components. Maximal set of bojects that are mutually connected.
 
-###Union-find data type (ADT)
+### Union-find data type (ADT)
 Goal. Design efficient data structure for union-find.
 - Number of objects N can be huge.
 - Number of operations M can be huge.
@@ -30,14 +30,14 @@ class UF {
 };
 ```
 
-###Quick-find (QuickFindUF.cpp)
+### Quick-find (QuickFindUF.cpp)
 > * Datastructure.
 	- Integer array id[] of size N.
 	- Interpretation: p and q are connected iff they have the same id.
 > * Find. Check if p and q have the same id. O(1)
 > * Union. To merge components containing p and q, change all entries whose id equals id[p] to id[q]. O(N), Union is too expensive.
 
-###Quick-union (QuickUnionUF.cpp)
+### Quick-union (QuickUnionUF.cpp)
 > * Datastructure.
 	- Integer array id[] of size N.
 	- Interpretation: id[i] is parent of i.
@@ -45,7 +45,7 @@ class UF {
 > * Find. check if p and q have the same root.
 > * Union. To merge components containing p and q, set the id of p's root to the id of q's root.
 
-###Improvement
+### Improvement
 1. Weighted quick-union. (WeightedQuickUnion.cpp)
 	- Modify quick-union to avoid tall trees.
 	- Keep track of size of each tree (number of objects).
@@ -55,7 +55,7 @@ class UF {
 	- Two-pass implementation: add second loop to root() to set the id[] of each examined node to the root.
 	- Simple one-pass variant: Make every node in path point to its grandparent (thereby halving path length).
 	
-###Sumarry
+### Sumarry
 | 		Algorithm		 | 			worst-case time 		|
 | 		:-------: 		 | 			:-----------:   		|
 | 		quick-find		 |				MN					|

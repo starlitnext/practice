@@ -1,3 +1,8 @@
+/**
+	Author: vipxxq
+	Figure 4.2 An array-based list implementation.
+*/
+
 #ifndef ALIST_H
 #define ALIST_H
 

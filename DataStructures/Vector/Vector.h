@@ -37,7 +37,7 @@ public:
 		return *this;
 	}
 	
-	E& operator[] ( int index ) { 
+	E& operator[] ( int index ) {
 		assert((index >= 0) && (index < m_size));
 		return objects[index]; 
 	}

@@ -1,3 +1,8 @@
+/**
+	Author: vipxxq
+	Figure 4.11 Implementation for the Link class with a freelist.
+*/
+
 #ifndef LINK_H
 #define LINK_H
 
